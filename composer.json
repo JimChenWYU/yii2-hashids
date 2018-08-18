@@ -1,0 +1,14 @@
+{
+    "name": "jimchen/hashids",
+    "description": "Hashids for Yii framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "JimChen",
+            "email": "18219111672@163.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
