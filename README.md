@@ -1,4 +1,4 @@
-# hashids
+# yii2-hashids
 
 Hashids for Yii framework
 
