@@ -58,7 +58,7 @@ class HashidsComponent extends Component
     | you would like.
     |
     */
-    private $connections = [];
+    public $connections = [];
 
     /**
      * Initialize component.
