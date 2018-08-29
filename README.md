@@ -5,7 +5,7 @@ Hashids for Yii framework
 ## Installing
 
 ```shell
-$ composer require jimchen/hashids -vvv
+$ composer require jimchen/yii2-hashids -vvv
 ```
 
 ## Usage
