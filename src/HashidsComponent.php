@@ -58,7 +58,7 @@ class HashidsComponent extends Component
     | you would like.
     |
     */
-    private $connections;
+    private $connections = [];
 
     /**
      * Initialize component.
@@ -89,20 +89,15 @@ class HashidsComponent extends Component
         }
 
         if (is_null($this->salt)) {
-            throw new InvalidArgumentException('HashidsComponent require salt value.');
+            $this->salt = '';
         }
 
-        $this->connections = [
+        $this->connections = array_merge($this->connections, [
             'main' => [
                 'salt'   => $this->salt,
                 'length' => $this->length,
             ],
-
-            'alternative' => [
-                'salt'   => $this->salt,
-                'length' => $this->length,
-            ],
-        ];
+        ]);
     }
 
     /**

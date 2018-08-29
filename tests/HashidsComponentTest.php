@@ -26,15 +26,9 @@ class HashidsComponentTest extends AbstractTestCase
         $this->hashids = \Yii::$app->hashids;
     }
 
-    /**
-     * @expectedException \yii\base\InvalidArgumentException
-     * @expectedExceptionMessage HashidsComponent require salt value.
-     */
-    public function testGetHashidsComponentWithoutSaltThrowException()
+    public function testGetHashidsComponentWithoutSalt()
     {
-        Yii::createObject(HashidsComponent::class, [
-            'salt' => null
-        ]);
+        Yii::createObject(HashidsComponent::class);
     }
 
     public function testHasRegisterFactory()
